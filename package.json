@@ -1,0 +1,20 @@
+{
+  "name": "node-cache-aside",
+  "version": "1.0.0",
+  "description": "Caching library with Nodejs, ensuring high performance thanks to a cache hit rate greater than or equal to 95%",
+  "main": "dist/src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stdio-Developer/node-cache-aside.git"
+  },
+  "scripts": {
+    "build": "tsc --project ./"
+  },
+  "author": "STDIO",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.9",
+    "node-cache": "^5.1.2",
+    "typescript": "^4.8.4"
+  }
+}
