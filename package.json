@@ -2,15 +2,48 @@
   "name": "node-cache-aside",
   "version": "1.0.0",
   "description": "Caching library with Nodejs, ensuring high performance thanks to a cache hit rate greater than or equal to 95%",
+  "keywords": [
+    "cache",
+    "caching",
+    "local",
+    "memory",
+    "internal",
+    "node",
+    "memcached",
+    "performance",
+    "aside"
+  ],
+  "tags": [
+    "cache",
+    "caching",
+    "local",
+    "memory",
+    "internal",
+    "node",
+    "memcached",
+    "performance",
+    "aside"
+  ],
+  "maintainers": [
+    {
+      "name": "Otis",
+      "email": "phucnhd@stdio.asia",
+      "url": "https://github.com/ducphuc-dev"
+    }
+  ],
+  "homepage": "hhttps://github.com/Stdio-Developer/node-cache-aside",
   "main": "dist/src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Stdio-Developer/node-cache-aside.git"
   },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
   "scripts": {
     "build": "tsc --project ./"
   },
-  "author": "STDIO",
+  "author": "STDIO_Otis",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.11.9",
