@@ -21,7 +21,7 @@ Keys can have a timeout (`ttl`) after which they expire and are deleted from the
 # Install
 
 ```bash
-	npm install node-cache-aside --save
+npm install node-cache-aside --save
 ```
 
 # Examples:
@@ -46,6 +46,13 @@ const result = await cacheAside.getOrSet(key, callback, TTL)
 - `TTL`: *(type: number, require: false, default: null) The standard TTL as a number in seconds for every generated cache element. If it isn't specific, the cache will exist forever
 
 
+## nodeCache
+To use feature same as `node-cache` package, you can follow example below: 
+```js
+import { cacheAside } from "node-cache-aside"
+const nodeCache = cacheAside.nodeCache()
+const data = nodeCache.get('cache_key')
+```
 ## Breaking changes
 
 
@@ -66,7 +73,7 @@ This package supports all node versions >= 8
 
 # The MIT License (MIT)
 
-Copyright © 2022 STDIO and the node-cache maintainers
+Copyright © 2022 STDIO and the node-cache-aside maintainers
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

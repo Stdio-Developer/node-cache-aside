@@ -1,11 +1,12 @@
 const NodeCache = require( "node-cache" );
 
 interface CacheAsideInterface {
-    getOrSet: Function
+    getOrSet: Function,
+    nodeCache: Function
 }
 
 export class CacheAside implements CacheAsideInterface {
-    private promiseMap: Map< string, Promise<any> >
+    private promiseMap: Map< string, Promise<Array<any>>>
     private cache = new NodeCache({
         /* 
         * Keep original promise object, not clone to new one for handling => saving memory
@@ -83,5 +84,13 @@ export class CacheAside implements CacheAsideInterface {
             return JSON.parse(data)
         }
         return data
+    }
+
+    /**
+     * To use node-cache package
+     * @returns
+     */
+    nodeCache() {
+        return this.cache
     }
 }
